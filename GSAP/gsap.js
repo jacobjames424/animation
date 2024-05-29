@@ -1,0 +1,34 @@
+var tl = gsap.timeline()
+tl.from("#box1",{
+    x:1200,
+    duration:2,
+    delay : 1,
+    rotate:-360,
+    yoyo:true
+})
+tl.to("#box2",{
+    x:1200,
+    duration:2,
+    rotate:-360,
+    yoyo:true
+})
+tl.from("#box3",{
+    x:3200,
+    duration:1,
+    rotate:-360,
+    yoyo:true
+})
+gsap.from("h1",{
+    y:-30,
+    opacity:0,
+})
+gsap.from("h3",{
+    x:80,
+    opacity:0,
+    stagger:.3
+})
+gsap.from("#heading",{
+    y:40,
+    opacity:0,
+    scale:2,
+})
